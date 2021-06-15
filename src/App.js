@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {useContext} from 'react'
+import Home1 from './components/Home1';
+import { GlobalStyle } from './components/GlobalStyle';
+import { themecontext } from './components/themecontext';
 function App() {
+  const {colors}=useContext(themecontext)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle colors={colors} />
+      <Home1 />
     </div>
   );
 }
