@@ -4,28 +4,32 @@ import { themecontext } from './themecontext'
 function Home1() {
     const {colors,setcolors}=useContext(themecontext)
     function changetheme(theme){
+        const dc={
+            bgcolor:"#15202b",
+            bdcolor:"#164d56",
+            boxcolor:"#172431",
+            boxshcolor:"#111921",
+            txtcolor:"#f4f4f4",
+            winbg:"#192734"
+        }
+        const lc={
+            bgcolor:"#eaeaea",
+            bdcolor:"#c1c1c1",
+            boxcolor:"#fcfaf5",
+            boxshcolor:"#f0ead6",
+            txtcolor:"black",
+            winbg:"white",
+        }
         if(theme==='dark'){
-            setcolors({
-                bgcolor:"#15202b",
-                bdcolor:"#164d56",
-                boxcolor:"#172431",
-                boxshcolor:"#111921",
-                txtcolor:"#f4f4f4",
-                winbg:"#192734"
-            })
+            window.localStorage.setItem('colors',JSON.stringify(dc))
+            setcolors(dc)
             
         }
         if(theme==='light'){
-            setcolors({
-                bgcolor:"#eaeaea",
-                bdcolor:"#c1c1c1",
-                boxcolor:"#fcfaf5",
-                boxshcolor:"#f0ead6",
-                txtcolor:"black",
-                winbg:"white",
-            })
+            window.localStorage.setItem('colors',JSON.stringify(lc))
+            setcolors(lc)
         }
-        window.localStorage.setItem('colors',colors)
+        
     }
     return (
         <div className="home1">
@@ -50,11 +54,13 @@ function Home1() {
                                 <div className="theme" id="light" onClick={()=>changetheme('light')}></div>
                                 <div className="theme" id="dark" onClick={()=>changetheme('dark')}></div>
                             </div>
+                            <h5>*Theme settings will be saved for your next vist</h5>
                         </div>
                         <div className="window-body-right">
                             <div className="window-body-right-box">
                                 <h2>Who Am I?</h2>
                                 <h4>An Ethusiastic Real Time Developer, Captures Tech Stuff and makes shelf of Applications</h4>
+                                
                             </div>
                         </div>
                     </div>
