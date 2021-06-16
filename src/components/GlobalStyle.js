@@ -8,7 +8,8 @@ export const GlobalStyle=createGlobalStyle`
         --txtcolor--:${(props)=>props.colors.txtcolor};
         --winbg--:${(props)=>props.colors.winbg};
         --secondarytext--${(props)=>props.colors.secondarytext};
-        --acolor--:${(props)=>props.colors.acolor}
+        --acolor--:${(props)=>props.colors.acolor};
+        --btncolor--:${(props)=>props.colors.btncolor};
     }
     hr{
         border-top:none;
@@ -17,6 +18,7 @@ export const GlobalStyle=createGlobalStyle`
     a{
         color:var(--acolor--);
         text-decoration:none;
+        font-family:'helvetica';
     }
     li,p{
         color:var(--secondarytext--);
@@ -155,6 +157,7 @@ export const GlobalStyle=createGlobalStyle`
     }
 
     .home2{
+        transition:0.5s;
         height:60vh;
         width:100%;
         background-color:var(--winbg--);
@@ -211,6 +214,141 @@ export const GlobalStyle=createGlobalStyle`
         height:30%;
     }
 
+    .home3{
+        display:flex;
+        flex-direction:column;
+        height:60vh;
+        width:100%;
+        background-color:var(--bgcolor--);
+        align-items:center;
+        justify-content:center;
+    }
+    .home3-featured{
+        height:90%;
+        width:70%;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+
+    }
+    .home3-featured>img{
+        height:90%;
+        width:60%;
+        border:1px solid var(--bdcolor--);
+    }
+    .img-details{
+        padding:0px 15px;
+    }
+    .img-details>a>button{
+        width:250px;
+        height:30px;
+        background-color:var(--btncolor--);
+        border:none;
+        color:#f4f4f4;
+        transition:0.3s;
+        cursor:pointer;
+        :hover{
+            opacity:0.8;
+        }
+    }
+
+    .home4{
+        background-color:var(--winbg--);
+        height:fit-content;
+    }
+    .home4-title{
+        height:20%;
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color:var(--winbg--);
+    }
+    .home4-projects{
+        height:80%;
+        width:100%;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        margin-bottom:0px;
+        flex-wrap:wrap;
+        padding-bottom:10px;
+    }
+    .home4-post{
+        margin:15px 15px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        border:1px solid var(--bdcolor--);
+        width:20%;
+        height:fit-content;
+        box-shadow: -2px 7px 21px -9px rgb(0 0 0 / 75%);
+    }
+    .post-img{
+        height:100%;
+        width:100%;
+    }
+    .post-img>img{
+        height:100%;
+        width:100%;
+    }
+    .post-details{
+        margin-left:7px;
+        margin-bottom:6px;
+    }
+    .home5{
+        height:45vh;
+        background-color:var(--bgcolor--);
+    }
+    .home6{
+        height:fit-content;
+        background-color:var(--winbg--);
+    }
+    .home6-title{
+        height:15%;
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color:var(--winbg--);
+        margin-bottom:1%;
+    }
+    .home6-contact{
+        height:85%;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+        padding-bottom:5px;
+    }
+    .inputs{
+        background-color:var(--bgcolor--);
+        border:1px solid var(--bdcolor--);
+        border-radius:5px;
+        width:40%;
+        padding:10px 15px;
+        height:fit-content;
+    }
+    input[type="text"]{
+        width:99%;
+        height:32px;
+        border:1px solid var(--bdcolor--);
+        border-radius:5px;
+    }
+    textarea{
+        border:1px solid var(--bdcolor--);
+        border-radius:5px;
+        height:100px;
+        width:99%;
+    }
+    .inputs>button{
+        width:99%;
+        height:34px;
+        border:none;
+        background-color:var(--btncolor--);
+        color:#f4f4f4;
+    }
 
     @media only screen and (max-width:768px) {
         .home1{
@@ -261,6 +399,34 @@ export const GlobalStyle=createGlobalStyle`
         .home2-right-code{
             padding:10px 0px;
             width:100%;
+        }
+        .home3{
+            height:fit-content;
+        }
+        .home3-featured{
+            width:90%;
+            margin-top:3%;
+            flex-direction:column;
+        }
+        .home3-featured>img{
+            width:100%;
+        }
+        .img-details{
+            width:100%;
+        }
+        .img-details>a>button{
+            margin-bottom:5%;
+        }
+
+        .home4-projects{
+            flex-direction:column;
+        }
+        .home4-post{
+            width:90%;
+            height:90%;
+        }
+        .inputs{
+            width:90%;
         }
 
     }

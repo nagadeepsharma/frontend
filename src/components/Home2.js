@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { themecontext } from './themecontext'
 
 function Home2() {
+    const {profile}=useContext(themecontext)
     return (
         <div className="home2">
             <div className="home2-left">
@@ -9,7 +11,7 @@ function Home2() {
             <p>While I keep busy Making Projects, I still search of a great team & projects that interest me.</p>
             <hr />
             <h2>Top Expertise</h2>
-            <p>Fullstack developer with primary focus on Django + React: <a href="">Download Resume</a></p>
+            <p>Fullstack developer with primary focus on Django + React: <a target="_window" href={profile.resume}>Download Resume</a></p>
             <div class="home2-left-skills">
                 <div className="ul">
                     <li>Django</li>
@@ -42,9 +44,9 @@ function Home2() {
                 </div>
                 <div className="home2-right-social">
                     <h2>Find me on Social</h2>
-                    <p><a href="">Gitub: @nagadeepsharma</a></p>
-                    <p><a href="">Linkedin: @nagadeepsharma</a></p>
-                    <p><a href="">Instagram: @nagadeepsharma</a></p>
+                    <p><a target="_window" href={profile.github}>Gitub: @nagadeepsharma</a></p>
+                    <p><a target="_window" href={profile.linkedin}>Linkedin: @nagadeepsharma</a></p>
+                    <p><a target="_window" href={profile.instagram}>Instagram: @nagadeepsharma</a></p>
                 </div>
             </div>
         </div>

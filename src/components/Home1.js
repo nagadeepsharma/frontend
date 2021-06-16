@@ -12,7 +12,8 @@ function Home1() {
             txtcolor:"#f4f4f4",
             winbg:"#192734",
             secondarytext:"#4b5156",
-            acolor:"#17a2b8"
+            acolor:"#17a2b8",
+            btncolor:"#17a2b8",
         }
         const lc={
             bgcolor:"#eaeaea",
@@ -22,7 +23,8 @@ function Home1() {
             txtcolor:"black",
             winbg:"white",
             secondarytext:"#4b5156",
-            acolor:"#17a2b8"
+            acolor:"#17a2b8",
+            btncolor:"black",
         }
         if(theme==='dark'){
             window.localStorage.setItem('colors',JSON.stringify(dc))
