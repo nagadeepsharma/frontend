@@ -2,40 +2,17 @@ import { useContext } from 'react'
 import face from '../assets/images/face.jpeg'
 import { themecontext } from './themecontext'
 function Home1() {
-    const {colors,setcolors}=useContext(themecontext)
+    const {colors,setcolors,dtheme}=useContext(themecontext)
     function changetheme(theme){
-        const dc={
-            bgcolor:"#15202b",
-            bdcolor:"#164d56",
-            boxcolor:"#172431",
-            boxshcolor:"#111921",
-            txtcolor:"#f4f4f4",
-            winbg:"#192734",
-            secondarytext:"#4b5156",
-            acolor:"#17a2b8",
-            btncolor:"#17a2b8",
-        }
-        const lc={
-            bgcolor:"#eaeaea",
-            bdcolor:"#c1c1c1",
-            boxcolor:"#fcfaf5",
-            boxshcolor:"#f0ead6",
-            txtcolor:"black",
-            winbg:"white",
-            secondarytext:"#4b5156",
-            acolor:"#17a2b8",
-            btncolor:"black",
-        }
         if(theme==='dark'){
-            window.localStorage.setItem('colors',JSON.stringify(dc))
-            setcolors(dc)
+            window.localStorage.setItem('colors',JSON.stringify(dtheme.dc))
+            setcolors(dtheme.dc)
             
         }
         if(theme==='light'){
-            window.localStorage.setItem('colors',JSON.stringify(lc))
-            setcolors(lc)
+            window.localStorage.setItem('colors',JSON.stringify(dtheme.lc))
+            setcolors(dtheme.lc)
         }
-        
     }
     return (
         <div className="home1">
