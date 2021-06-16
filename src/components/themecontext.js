@@ -16,6 +16,8 @@ export const Themecontextprovider=(props)=>{
             boxshcolor:"#f0ead6",
             txtcolor:"black",
             winbg:"white",
+            secondarytext:"#4b5156",
+            acolor:"#17a2b8"
         })
     }
 }
