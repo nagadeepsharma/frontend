@@ -12,7 +12,7 @@ function Home2() {
             <hr />
             <h2>Top Expertise</h2>
             <p>Fullstack developer with primary focus on Django + React: <a target="_window" href={profile.resume}>Download Resume</a></p>
-            <div class="home2-left-skills">
+            <div className="home2-left-skills">
                 <div className="ul">
                     <li>Django</li>
                     <li>React & Native</li>
