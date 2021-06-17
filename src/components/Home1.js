@@ -1,7 +1,8 @@
-import { useDispatch,} from 'react-redux'
+// import { useDispatch,} from 'react-redux'
 import face from '../assets/images/face.jpeg'
+import Header from './Header'
 function Home1() {
-    const dispatch=useDispatch()
+    // const dispatch=useDispatch()
     return (
         <div className="home1">
             <div className="home1-wrap">
@@ -9,22 +10,15 @@ function Home1() {
                     <h1>Hi, I'm Nagadeep</h1>
                  </div>
                 <div className="home1-window">
-                    <div className="window-header">
-                        <div className="window-header-icons">
-                            <div className="dots" id="red"></div>
-                            <div className="dots" id="yellow"></div>
-                            <div className="dots" id="green"></div>
-                        </div>
-                        <h3 className="window-header-contact">Contact</h3>
-                    </div>
+                    <Header />
                     <div className="window-body">
                         <div className="window-body-left">
                             <img src={face} alt="Face"/>
-                            <h3>Personalize Theme</h3>
-                            <div className="window-body-left-themes">
+                            {/* <h3>Personalize Theme</h3> */}
+                            {/* <div className="window-body-left-themes">
                                 <div className="theme" id="light" onClick={()=>dispatch({type:'light'})}></div>
                                 <div className="theme" id="dark" onClick={()=>dispatch({type:'dark'})}></div>
-                            </div>
+                            </div> */}
                             <h5>*Theme settings will be saved for your next vist</h5>
                         </div>
                         <div className="window-body-right">

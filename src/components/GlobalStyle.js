@@ -11,6 +11,38 @@ export const GlobalStyle=createGlobalStyle`
         --acolor--:${(props)=>props.colors.acolor};
         --btncolor--:${(props)=>props.colors.btncolor};
     }
+    .left-bars{
+        width:250px;
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+    }
+    .switch{
+        display:flex;
+        background-color:var(--winbg--);
+        width: 55px;
+        height: 25px;
+        border-radius: 50px;
+        margin:10px 0px;
+        border:1px solid var(--acolor--);
+    }
+    .checkbox{
+        visibility: hidden;
+    }
+    .checkbox:checked+label{
+        transition: .4s;
+        transform: translateX(29px);
+    }
+    label{
+        margin-top:0.8px;
+        margin-left:-18px;
+        width: 23px;
+        height: 23px;
+        transition: .4s;
+        border-radius: 50px;
+        cursor: pointer;
+        background-color: var(--btncolor--);
+    }
     hr{
         border-top:none;
         border-bottom:1px solid var(--bdcolor--);

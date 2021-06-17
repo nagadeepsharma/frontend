@@ -11,6 +11,7 @@ const themereducer=(state={},action)=>{
                 secondarytext:"#4b5156",
                 acolor:"#17a2b8",
                 btncolor:"black",
+                changed:false,
             }
             localStorage.setItem('colors',JSON.stringify(lc))
             return lc 
@@ -25,6 +26,7 @@ const themereducer=(state={},action)=>{
                 secondarytext:"#4b5156",
                 acolor:"#17a2b8",
                 btncolor:"#17a2b8",
+                changed:true
             }
             localStorage.setItem('colors',JSON.stringify(dc))
             return dc
