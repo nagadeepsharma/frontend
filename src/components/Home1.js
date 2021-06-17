@@ -1,19 +1,7 @@
-import { useContext } from 'react'
+import { useDispatch,} from 'react-redux'
 import face from '../assets/images/face.jpeg'
-import { themecontext } from './themecontext'
 function Home1() {
-    const {colors,setcolors,dtheme}=useContext(themecontext)
-    function changetheme(theme){
-        if(theme==='dark'){
-            window.localStorage.setItem('colors',JSON.stringify(dtheme.dc))
-            setcolors(dtheme.dc)
-            
-        }
-        if(theme==='light'){
-            window.localStorage.setItem('colors',JSON.stringify(dtheme.lc))
-            setcolors(dtheme.lc)
-        }
-    }
+    const dispatch=useDispatch()
     return (
         <div className="home1">
             <div className="home1-wrap">
@@ -34,8 +22,8 @@ function Home1() {
                             <img src={face} alt="Face"/>
                             <h3>Personalize Theme</h3>
                             <div className="window-body-left-themes">
-                                <div className="theme" id="light" onClick={()=>changetheme('light')}></div>
-                                <div className="theme" id="dark" onClick={()=>changetheme('dark')}></div>
+                                <div className="theme" id="light" onClick={()=>dispatch({type:'light'})}></div>
+                                <div className="theme" id="dark" onClick={()=>dispatch({type:'dark'})}></div>
                             </div>
                             <h5>*Theme settings will be saved for your next vist</h5>
                         </div>

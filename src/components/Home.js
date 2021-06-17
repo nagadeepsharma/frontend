@@ -7,10 +7,17 @@ import Home6 from './Home6';
 import React from 'react'
 
 function Home() {
+    const profile={
+        github:"http://github.com/nagadeepsharma",
+        resume:"https://drive.google.com/file/d/1r94xZ02VcdEo0euDIkR3EBBBpQ4deOSs/view?usp=sharing",
+        instagram:"https://www.instagram.com/nagadeep.sharma/",
+        linkedin:"https://www.linkedin.com/in/nagadeep-sharma-968a8616a/"
+    }
+
     return (
         <>
             <Home1 />
-            <Home2 />
+            <Home2 profile={profile}/>
             <Home3 />
             <Home4 />
             <Home5 />

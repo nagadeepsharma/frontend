@@ -1,8 +1,5 @@
-import React, { useContext } from 'react'
-import { themecontext } from './themecontext'
-
-function Home2() {
-    const {profile}=useContext(themecontext)
+import React from 'react'
+function Home2({profile}) {
     return (
         <div className="home2">
             <div className="home2-left">

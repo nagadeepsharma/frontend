@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Themecontextprovider} from './components/themecontext'
-
+import {Parentprovider} from './components/parentprovider'
+import { createStore } from 'redux';
+import themereducer from './components/reducers/themereducer';
+const store=createStore(themereducer)
 ReactDOM.render(
   <React.StrictMode>
-    <Themecontextprovider>
+    <Parentprovider>
     <App />
-    </Themecontextprovider>
+    </Parentprovider>
   </React.StrictMode>,
   document.getElementById('root')
 );

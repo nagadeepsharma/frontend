@@ -1,10 +1,11 @@
 import './App.css';
-import {useContext} from 'react'
 import Home from './components/Home';
 import { GlobalStyle } from './components/GlobalStyle';
-import { themecontext } from './components/themecontext';
+import {useSelector } from 'react-redux';
+
 function App() {
-  const {colors}=useContext(themecontext)
+  const colors=useSelector((state)=>state)
+  console.log(colors);
   return (
     <div className="App">
       <GlobalStyle colors={colors} />
