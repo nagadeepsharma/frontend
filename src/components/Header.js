@@ -13,10 +13,10 @@ function Header() {
                 </div>
                 <div className="left-bars">
                 🌞
-                <div class="switch">
+                <div className="switch">
                     
-                    <input class="checkbox" onChange={()=>dispatch({type:themechanger?"light":"dark"})} type="checkbox" name="" id="ch" />
-                    <label class="lab" for="ch"></label>
+                    <input className="checkbox" checked={themechanger?true:false} onChange={()=>dispatch({type:themechanger?"light":"dark"})} type="checkbox" name="" id="ch" />
+                    <label className="lab" htmlFor="ch"></label>
                 </div>
                 🌚
                 <h3 className="window-header-contact">Contact</h3>

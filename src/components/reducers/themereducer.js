@@ -31,7 +31,7 @@ const themereducer=(state={},action)=>{
             localStorage.setItem('colors',JSON.stringify(dc))
             return dc
         default:
-            if(localStorage.getItem('colors').length!==0){
+            if(localStorage.getItem('colors')){
                 return JSON.parse(localStorage.getItem('colors'))
             }
             else{
@@ -44,7 +44,9 @@ const themereducer=(state={},action)=>{
             winbg:"white",
             secondarytext:"#4b5156",
             acolor:"#17a2b8",
-            btncolor:"black",}}
+            btncolor:"black",
+            changed:false,
+        }}
     }
 }
 export default themereducer;

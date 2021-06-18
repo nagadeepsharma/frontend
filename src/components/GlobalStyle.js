@@ -330,7 +330,31 @@ export const GlobalStyle=createGlobalStyle`
     }
     .home5{
         height:45vh;
+        width:100%;
         background-color:var(--bgcolor--);
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .home5-content>h1>span{
+        font-size:50px;
+    }
+    .home5-content{
+        display:flex;
+        padding:10px 10px;
+        width:40%;
+        align-items:center;
+        justify-content:space-evenly;
+    }
+    .home5-content>button{
+        height:30%;
+        width:50%;
+        border:none;
+        background-color:var(--btncolor--);
+        color:#f4f4f4;
+        cursor:pointer;
+        font-size:16px;
     }
     .home6{
         height:fit-content;
@@ -386,14 +410,18 @@ export const GlobalStyle=createGlobalStyle`
         .home1{
             height: 120vh;
         }
+        .home1-wrap{
+            width:90%;
+        }
         .home1-window{
-            height: 74%;
+            height: 74.6%;
 
         }
         .window-header-icons{
             width: 25%;
         }
         .window-body{
+            overflow:hidden;
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
@@ -459,6 +487,18 @@ export const GlobalStyle=createGlobalStyle`
         }
         .inputs{
             width:90%;
+        }
+        .home5-content{
+            width:80%;
+            height:60%;
+            flex-direction:column;
+        }
+        .checkbox:checked+label{
+            transition: .4s;
+            transform: translateX(28px);
+        }
+        label{
+            margin-left:-21px;
         }
 
     }
