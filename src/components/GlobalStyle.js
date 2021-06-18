@@ -20,28 +20,30 @@ export const GlobalStyle=createGlobalStyle`
     .switch{
         display:flex;
         background-color:var(--winbg--);
-        width: 55px;
+        width: 25%;
         height: 25px;
         border-radius: 50px;
         margin:10px 0px;
         border:1px solid var(--acolor--);
+        padding:0px 2px;
     }
     .checkbox{
         visibility: hidden;
     }
     .checkbox:checked+label{
         transition: .4s;
-        transform: translateX(29px);
+        transform: translateX(38px);
     }
     label{
         margin-top:0.8px;
-        margin-left:-18px;
+        margin-left:-31%;
         width: 23px;
         height: 23px;
         transition: .4s;
         border-radius: 50px;
         cursor: pointer;
         background-color: var(--btncolor--);
+        
     }
     hr{
         border-top:none;
@@ -190,7 +192,7 @@ export const GlobalStyle=createGlobalStyle`
 
     .home2{
         transition:0.5s;
-        height:60vh;
+        height:63vh;
         width:100%;
         background-color:var(--winbg--);
         display:flex;
@@ -263,9 +265,20 @@ export const GlobalStyle=createGlobalStyle`
         align-items:center;
 
     }
+    .post-tags{
+        display:flex;
+        justify-content:space-evenly;
+        flex-wrap:wrap;
+    }
+    .post-tags>p{
+        font-size:13px;
+        border-radius:1px;
+        padding:3px 10px;
+        background-color:var(--bgcolor--);
+    }
     .home3-featured>img{
         height:90%;
-        width:60%;
+        width:50%;
         border:1px solid var(--bdcolor--);
     }
     .img-details{
@@ -314,14 +327,15 @@ export const GlobalStyle=createGlobalStyle`
         border:1px solid var(--bdcolor--);
         width:20%;
         height:fit-content;
-        box-shadow: -2px 7px 21px -9px rgb(0 0 0 / 75%);
+        box-shadow: -2px 7px 10px -9px rgb(0 0 0 / 75%);
     }
     .post-img{
         height:100%;
         width:100%;
+        border-bottom:1px solid var(--bdcolor--);
     }
     .post-img>img{
-        height:100%;
+        height:150px;
         width:100%;
     }
     .post-details{
@@ -495,10 +509,7 @@ export const GlobalStyle=createGlobalStyle`
         }
         .checkbox:checked+label{
             transition: .4s;
-            transform: translateX(28px);
-        }
-        label{
-            margin-left:-21px;
+            transform: translateX(38px);
         }
 
     }

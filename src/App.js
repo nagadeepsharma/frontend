@@ -5,7 +5,6 @@ import {useSelector } from 'react-redux';
 
 function App() {
   const colors=useSelector((state)=>state)
-  console.log(colors);
   return (
     <div className="App">
       <GlobalStyle colors={colors} />
