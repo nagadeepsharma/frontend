@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 function Home4() {
     const axios=require('axios')
     const [projects,setprojects]=useState([])
+    const [limit,setlimit]=useState(4)
     useEffect(()=>{
         if(projects.length===0){
         axios.get('http://127.0.0.1:8000/projects')
@@ -15,8 +16,8 @@ function Home4() {
             </div>
             <div className="home4-projects">
                 {projects.length===0?<h1>Loading.....</h1>:
-                projects.map((project)=>
-                <div className="home4-post">
+                projects.slice(0,limit).map((project)=>
+                <div className="home4-post" key={project.id}>
                     <div className="post-img">
                         <img src={"http://127.0.0.1:8000"+project.thumbnail} />
                     </div>
@@ -25,12 +26,13 @@ function Home4() {
                         <p>{project.description}</p>
                         <a href={project.link} target="_window">Let me in</a>
                         <div className="post-tags">
-                            {project.tags.map((tag)=><p>{tag}</p>)}
+                            {project.tags.map((tag)=><p key={tag}>{tag}</p>)}
                         </div>
                     </div>
                 </div>
             )}
             </div>
+            <a style={{margin:"5px 5px",cursor:"pointer"}} onClick={()=>setlimit(projects.length)}>{projects.length!==0 && limit!==projects.length && limit<projects.length?"View More":""}</a>
         </div>
     )
 }

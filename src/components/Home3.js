@@ -14,7 +14,7 @@ function Home3() {
             {
             feature.length===0?<h1>Loading...</h1>:
             feature.map((f)=>
-            <div className="home3-featured">
+            <div className="home3-featured" key={f.id}>
                 <img src={"http://127.0.0.1:8000"+f.thumbnail} />
                 <div className="img-details">
                     <h1>{f.title}</h1>

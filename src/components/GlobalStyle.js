@@ -11,6 +11,9 @@ export const GlobalStyle=createGlobalStyle`
         --acolor--:${(props)=>props.colors.acolor};
         --btncolor--:${(props)=>props.colors.btncolor};
     }
+    html{
+        scroll-behavior:smooth;
+    }
     .left-bars{
         width:250px;
         display:flex;
@@ -88,17 +91,18 @@ export const GlobalStyle=createGlobalStyle`
         font-size:50px
     }
     .home1-window{
+        padding-top:5px;
         background-color:var(--bgcolor--);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;    
-        height: 74.6%;
+        height: 73.8%;
         width: 100%;
         border:1px solid var(--bdcolor--);
         box-shadow: 0px 0px 1px rgb(124, 116, 116);
     }
     .window-header{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        // border-top-left-radius: 10px;
+        // border-top-right-radius: 10px;
         height: 9%;
         background-color:var(--bgcolor--);
         display: flex;
@@ -112,6 +116,11 @@ export const GlobalStyle=createGlobalStyle`
     }
     .window-header-contact{
         margin: 0px 10px;
+        
+    }
+    .window-header-contact a{
+        color:var(--txtcolor--);
+        
     }
     .dots{
         height: 15px;
@@ -300,6 +309,9 @@ export const GlobalStyle=createGlobalStyle`
     .home4{
         background-color:var(--winbg--);
         height:fit-content;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
     }
     .home4-title{
         height:20%;
@@ -418,9 +430,92 @@ export const GlobalStyle=createGlobalStyle`
         border:none;
         background-color:var(--btncolor--);
         color:#f4f4f4;
+        cursor:pointer;
+    }
+    body{
+        background-color:var(--winbg--);
+    }
+    .blogs{
+        background-color:var(--winbg--);
+        height:fit-content;
+    }
+    .blog-section{
+        padding:5px 5px;
+        height:fit-content;
+        display:flex;
+        flex-wrap:wrap;
+        wdith:100%;
+    }
+    .blogs-blog{
+        height:fit-content;
+        width:22%;
+        margin:5px 5px;
+        padding:5px 10px;
+        border:1px solid var(--bdcolor--);
+        background-color:var(--bgcolor--);
+    }
+    .particular{
+        width:100%;
+        height:fit-content;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .blog-content{
+        width:90%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        height:fit-content;
+    }
+    .blog-content>p{
+        display:flex;
+        flex-direction:column;
+    }
+    .blog-content>div{
+        width:100% !important;
+    }
+    .blog-content>div>pre{
+        overflow:auto;
+    }
+    .blog-content>p>img{
+        width:100% !important;
+        height:50% !important;
     }
 
     @media only screen and (max-width:768px) {
+        .particular{
+            width:100%;
+            height:fit-content;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        .blog-content{
+            width:90%;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            height:fit-content;
+        }
+        .blog-content>p{
+            display:flex;
+            flex-direction:column;
+        }
+        .blog-content>div{
+            width:100% !important;
+        }
+        .blog-content>div>pre{
+            overflow:auto;
+        }
+        .blog-content>p>img{
+            width:100% !important;
+            height:50% !important;
+        }
         .home1{
             height: 120vh;
         }
@@ -428,7 +523,7 @@ export const GlobalStyle=createGlobalStyle`
             width:90%;
         }
         .home1-window{
-            height: 74.6%;
+            height: 74.1%;
 
         }
         .window-header-icons{
@@ -510,6 +605,12 @@ export const GlobalStyle=createGlobalStyle`
         .checkbox:checked+label{
             transition: .4s;
             transform: translateX(38px);
+        }
+        .blog-section{
+            flex-direction:column;
+        }
+        .blogs-blog{
+            width:fit-content;
         }
 
     }
