@@ -4,9 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Parentprovider} from './components/parentprovider'
-import { createStore } from 'redux';
-import themereducer from './components/reducers/themereducer';
-const store=createStore(themereducer)
 ReactDOM.render(
   <React.StrictMode>
     <Parentprovider>
