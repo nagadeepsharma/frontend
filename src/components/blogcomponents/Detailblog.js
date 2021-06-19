@@ -10,7 +10,7 @@ function Detailblog() {
     useEffect(()=>{
         const axios=require('axios')
         if(blog.length===0){
-            axios.get(`http://127.0.0.1:8000/blogs/${id}`)
+            axios.get(`http://nagadeepsharma.pythonanywhere.com/blogs/${id}`)
             .then((data)=>setblog(data.data))
         }
     })
