@@ -10,12 +10,12 @@ function Detailblog() {
     useEffect(()=>{
         const axios=require('axios')
         if(blog.length===0){
-            axios.get(`http://nagadeepsharma.pythonanywhere.com/blogs/${id}`)
+            axios.get(`https://nagadeepsharma.pythonanywhere.com/blogs/${id}`)
             .then((data)=>setblog(data.data))
         }
     })
     return (
-        <div>
+        <div className="detail" >
             <Header />
             <div className="particular">
             {blog.length==0?<h1>Loading...</h1>:

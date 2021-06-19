@@ -8,7 +8,7 @@ function Blogs() {
     useEffect(()=>{
         const axios=require('axios')
         if(blogs.length===0){
-        axios.get('http://nagadeepsharma.pythonanywhere.com/blogs')
+        axios.get('https://nagadeepsharma.pythonanywhere.com/blogs')
         .then((data)=>dispatch({type:"loadblogs",payload:data.data}))
         }
     })

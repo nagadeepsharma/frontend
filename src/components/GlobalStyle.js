@@ -260,14 +260,15 @@ export const GlobalStyle=createGlobalStyle`
     .home3{
         display:flex;
         flex-direction:column;
-        height:60vh;
+        height:fit-content;
         width:100%;
         background-color:var(--bgcolor--);
         align-items:center;
         justify-content:center;
     }
     .home3-featured{
-        height:90%;
+        padding:20px 0px;
+        height:100%;
         width:70%;
         display:flex;
         justify-content:space-evenly;
@@ -286,7 +287,7 @@ export const GlobalStyle=createGlobalStyle`
         background-color:var(--bgcolor--);
     }
     .home3-featured>img{
-        height:90%;
+        height:100%;
         width:50%;
         border:1px solid var(--bdcolor--);
     }
@@ -486,6 +487,10 @@ export const GlobalStyle=createGlobalStyle`
     }
 
     @media only screen and (max-width:768px) {
+        .detail{
+            width:fit-content;
+            height:fit-content;
+        }
         .particular{
             width:100%;
             height:fit-content;
@@ -505,13 +510,16 @@ export const GlobalStyle=createGlobalStyle`
         .blog-content>p{
             display:flex;
             flex-direction:column;
+            font-size:25px;
         }
         .blog-content>div{
+            background-color:var(--bgcolor--) !important;
             width:100% !important;
         }
         .blog-content>div>pre{
             overflow:auto;
         }
+
         .blog-content>p>img{
             width:100% !important;
             height:50% !important;
@@ -591,7 +599,7 @@ export const GlobalStyle=createGlobalStyle`
             flex-direction:column;
         }
         .home4-post{
-            width:90%;
+            width:80%;
             height:90%;
         }
         .inputs{
@@ -602,9 +610,23 @@ export const GlobalStyle=createGlobalStyle`
             height:60%;
             flex-direction:column;
         }
+        .switch{
+            display:flex;
+            justify-content:start;
+            align-items:center;
+            overflow:hidden;
+            padding-left: 4px;
+            padding-right: 1px;
+            height:30px;
+        }
+        label{
+            height:25px;
+            width:25px;
+        }
         .checkbox:checked+label{
             transition: .4s;
-            transform: translateX(38px);
+            transform: translateX(33px);
+            overflow:hidden;
         }
         .blog-section{
             flex-direction:column;

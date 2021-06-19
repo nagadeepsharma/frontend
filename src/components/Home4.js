@@ -5,7 +5,7 @@ function Home4() {
     const [limit,setlimit]=useState(4)
     useEffect(()=>{
         if(projects.length===0){
-        axios.get('http://nagadeepsharma.pythonanywhere.com/projects')
+        axios.get('https://nagadeepsharma.pythonanywhere.com/projects')
         .then((data)=>setprojects(data.data.active))
     }
     })
@@ -19,7 +19,7 @@ function Home4() {
                 projects.slice(0,limit).map((project)=>
                 <div className="home4-post" key={project.id}>
                     <div className="post-img">
-                        <img src={"http://nagadeepsharma.pythonanywhere.com"+project.thumbnail} />
+                        <img src={"https://nagadeepsharma.pythonanywhere.com"+project.thumbnail} />
                     </div>
                     <div className="post-details">
                         <h3>{project.title}</h3>
