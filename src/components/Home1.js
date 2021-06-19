@@ -1,5 +1,5 @@
 // import { useDispatch,} from 'react-redux'
-import face from '../assets/images/face.jpeg'
+import face from '../assets/face.jpeg'
 import Header from './Header'
 function Home1() {
     // const dispatch=useDispatch()
