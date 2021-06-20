@@ -1,5 +1,3 @@
-const initialstate=[]
-
 const blogreducer=(state=[],action)=>{
     switch(action.type){
         case "loadblogs":

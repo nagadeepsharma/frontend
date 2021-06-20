@@ -19,7 +19,7 @@ function Home4() {
                 projects.slice(0,limit).map((project)=>
                 <div className="home4-post" key={project.id}>
                     <div className="post-img">
-                        <img src={"https://nagadeepsharma.pythonanywhere.com"+project.thumbnail} />
+                        <img src={"https://nagadeepsharma.pythonanywhere.com"+project.thumbnail} alt="thumbnail"/>
                     </div>
                     <div className="post-details">
                         <h3>{project.title}</h3>

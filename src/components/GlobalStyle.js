@@ -488,8 +488,9 @@ export const GlobalStyle=createGlobalStyle`
 
     @media only screen and (max-width:768px) {
         .detail{
-            width:fit-content;
+            width:100%;
             height:fit-content;
+            overflow:hidden;
         }
         .particular{
             width:100%;

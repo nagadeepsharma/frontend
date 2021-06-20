@@ -6,7 +6,6 @@ import Header from '../Header'
 function Detailblog() {
     const {id}=useParams()
     const [blog,setblog]=useState([])
-    console.log(blog);
     useEffect(()=>{
         const axios=require('axios')
         if(blog.length===0){
