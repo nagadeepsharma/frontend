@@ -20,6 +20,7 @@ function Blogs() {
             {blogs.length===0?<h1>Loading...</h1>:
             blogs.map((blog)=>
             <div className="blogs-blog" key={blog.id}>
+            <a>{blog.created.slice(0,10)+" "+blog.created.slice(11,)}</a>
             <h2>{blog.title}</h2>
             <p>{blog.description}</p>
             <Link to={`/blogs/${blog.id}`}>Read More....</Link>
