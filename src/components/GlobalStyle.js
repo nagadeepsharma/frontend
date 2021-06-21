@@ -23,7 +23,8 @@ export const GlobalStyle=createGlobalStyle`
     .switch{
         display:flex;
         background-color:var(--winbg--);
-        width: 25%;
+        justify-content:space-between;
+        width: 30%;
         height: 25px;
         border-radius: 50px;
         margin:10px 0px;
@@ -35,11 +36,11 @@ export const GlobalStyle=createGlobalStyle`
     }
     .checkbox:checked+label{
         transition: .4s;
-        transform: translateX(38px);
+        transform: translateX(52px);
     }
     label{
         margin-top:0.8px;
-        margin-left:-31%;
+        margin-left:-102px;
         width: 23px;
         height: 23px;
         transition: .4s;
@@ -613,7 +614,6 @@ export const GlobalStyle=createGlobalStyle`
         }
         .switch{
             display:flex;
-            justify-content:start;
             align-items:center;
             overflow:hidden;
             padding-left: 4px;
@@ -626,7 +626,7 @@ export const GlobalStyle=createGlobalStyle`
         }
         .checkbox:checked+label{
             transition: .4s;
-            transform: translateX(33px);
+            transform: translateX(49px);
             overflow:hidden;
         }
         .blog-section{
