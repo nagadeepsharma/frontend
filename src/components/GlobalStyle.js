@@ -559,6 +559,10 @@ export const GlobalStyle=createGlobalStyle`
             align-items: center;
             justify-content: space-evenly;
         }
+        .left-bars{
+            display:flex;
+            justify-content:flex-end;
+        }
         .window-body-right{
             width: 80%;
             align-items: center;
