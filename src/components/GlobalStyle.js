@@ -456,6 +456,11 @@ export const GlobalStyle=createGlobalStyle`
         border:1px solid var(--bdcolor--);
         background-color:var(--bgcolor--);
     }
+    .detail{
+        width:100%;
+        height:fit-content;
+        overflow:hidden;
+    }
     .particular{
         width:100%;
         height:fit-content;
@@ -465,11 +470,11 @@ export const GlobalStyle=createGlobalStyle`
         align-items:center;
     }
     .blog-content{
-        width:90%;
+        width:60%;
         display:flex;
         flex-direction:column;
         justify-content:center;
-        align-items:center;
+        align-items:start;
         height:fit-content;
     }
     .blog-content>p{
@@ -494,7 +499,7 @@ export const GlobalStyle=createGlobalStyle`
             overflow:hidden;
         }
         .particular{
-            width:100%;
+            width:95%;
             height:fit-content;
             display:flex;
             flex-direction:column;
@@ -506,17 +511,24 @@ export const GlobalStyle=createGlobalStyle`
             display:flex;
             flex-direction:column;
             justify-content:center;
-            align-items:center;
+            align-items:flex-start;
             height:fit-content;
         }
         .blog-content>p{
             display:flex;
             flex-direction:column;
-            font-size:25px;
+            font-size:13px;
+        }
+        .blog-content>h1{
+
+            font-size:15px;
         }
         .blog-content>div{
+            display:flex;
+            flex-direction:column;
             background-color:var(--bgcolor--) !important;
             width:100% !important;
+            align-items:start;
         }
         .blog-content>div>pre{
             overflow:auto;
