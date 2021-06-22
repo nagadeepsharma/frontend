@@ -483,6 +483,7 @@ export const GlobalStyle=createGlobalStyle`
     }
     .blog-content>div{
         width:100% !important;
+        background-color:var(--bgcolor--) !important;
     }
     .blog-content>div>pre{
         overflow:auto;
