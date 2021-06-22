@@ -529,6 +529,7 @@ export const GlobalStyle=createGlobalStyle`
             background-color:var(--bgcolor--) !important;
             width:100% !important;
             align-items:start;
+            overflow:auto;
         }
         .blog-content>div>pre{
             overflow:auto;
