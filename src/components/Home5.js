@@ -6,7 +6,7 @@ function Home5() {
         <div className="home5">
             <div className="home5-content">
             <h1>Do You Know I Write <span>BLOGS</span></h1>
-            <button><Link to="/blogs" style={{color:"#f4f4f4"}}>Oh! Lets See...</Link></button>
+            <button style={{padding:"5px 0px"}}><Link to="/blogs" style={{color:"#f4f4f4"}}>Checkout</Link></button>
             </div>
         </div>
     )

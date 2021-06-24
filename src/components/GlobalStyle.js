@@ -493,7 +493,7 @@ export const GlobalStyle=createGlobalStyle`
         height:50% !important;
     }
 
-    @media only screen and (max-width:768px) {
+    @media only screen and (max-width:812px) {
         .detail{
             width:100%;
             height:fit-content;
@@ -541,13 +541,15 @@ export const GlobalStyle=createGlobalStyle`
             height:50% !important;
         }
         .home1{
-            height: 120vh;
+            height: fit-content;
         }
         .home1-wrap{
             width:90%;
+            
         }
         .home1-window{
-            height: 74.1%;
+            margin-bottom:2px;
+            height: fit-content;
 
         }
         .window-header-icons{
@@ -558,6 +560,7 @@ export const GlobalStyle=createGlobalStyle`
             flex-direction: column;
             align-items: center;
             justify-content: space-evenly;
+            padding:20px 0px;
         }
         .left-bars{
             display:flex;
@@ -614,16 +617,21 @@ export const GlobalStyle=createGlobalStyle`
         .img-details>a>button{
             margin-bottom:5%;
         }
+        .home-projects{
+            display:flex;
 
-        .home4-projects{
-            flex-direction:column;
         }
         .home4-post{
             width:80%;
+            max-width:300px;
             height:90%;
         }
         .inputs{
             width:90%;
+        }
+        .home5{
+            padding:20px 0px;
+            height:fit-content;
         }
         .home5-content{
             width:80%;
