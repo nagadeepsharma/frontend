@@ -193,7 +193,7 @@ export const GlobalStyle=createGlobalStyle`
     }
     .window-body-right-box{
         padding: 5px 10px;
-        height: 30%;
+        height: fit-content;
         width: 90%;
         background-color: var(--boxcolor--);
         border:1px solid var(--acolor--);
@@ -202,13 +202,15 @@ export const GlobalStyle=createGlobalStyle`
 
     .home2{
         transition:0.5s;
-        height:63vh;
+        height:fit-content;
         width:100%;
         background-color:var(--winbg--);
         display:flex;
         justify-content:center;
+        padding:20px 0px;
     }
     .home2-left{
+        height"fit-content;
         margin-top:1%;
         width:40%;
     }
@@ -220,7 +222,7 @@ export const GlobalStyle=createGlobalStyle`
         align-items:center;
         justify-content:space-around;
         width:100%;
-        height:30%;
+        height:fit-content;
         background-color:var(--boxshcolor--);
     }
     .ul{
