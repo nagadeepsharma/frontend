@@ -210,7 +210,7 @@ export const GlobalStyle=createGlobalStyle`
         padding:20px 0px;
     }
     .home2-left{
-        height"fit-content;
+        height:fit-content;
         margin-top:1%;
         width:40%;
     }
