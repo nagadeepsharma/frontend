@@ -520,11 +520,11 @@ export const GlobalStyle=createGlobalStyle`
         .blog-content>p{
             display:flex;
             flex-direction:column;
-            font-size:13px;
+            font-size:18px;
         }
         .blog-content>h1{
 
-            font-size:15px;
+            font-size:25px;
         }
         .blog-content>div{
             display:flex;
