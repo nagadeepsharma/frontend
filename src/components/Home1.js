@@ -24,7 +24,7 @@ function Home1() {
                         <div className="window-body-right">
                             <div className="window-body-right-box">
                                 <h2>Who Am I?</h2>
-                                <h4>An Ethusiastic Real Time Developer, Captures Tech Stuff and makes shelf of Applications</h4>
+                                <h4>An Enthusiastic Real Time Developer, Captures Tech Stuff and makes shelf of Applications</h4>
                                 
                             </div>
                         </div>

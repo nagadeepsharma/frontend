@@ -662,6 +662,7 @@ export const GlobalStyle=createGlobalStyle`
         }
         .blogs-blog{
             width:fit-content;
+            margin-bottom:2px;
         }
 
     }
