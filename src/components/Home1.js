@@ -19,7 +19,7 @@ function Home1() {
                                 <div className="theme" id="light" onClick={()=>dispatch({type:'light'})}></div>
                                 <div className="theme" id="dark" onClick={()=>dispatch({type:'dark'})}></div>
                             </div> */}
-                            <h5>*Theme settings will be saved for your next vist</h5>
+                            <h5>*Theme settings will be saved for your next visit</h5>
                         </div>
                         <div className="window-body-right">
                             <div className="window-body-right-box">

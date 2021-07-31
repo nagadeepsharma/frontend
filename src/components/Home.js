@@ -9,7 +9,7 @@ import React from 'react'
 function Home() {
     const profile={
         github:"http://github.com/nagadeepsharma",
-        resume:"https://drive.google.com/file/d/1FvKY9r_wHow-nY3feN2jq_hC_zmVg9nC/view?usp=sharing",
+        resume:"https://drive.google.com/file/d/1SIHvYiGLPuRzsf3ag10GypOwcye0s_Cg/view?usp=sharing",
         instagram:"https://www.instagram.com/nagadeep.sharma/",
         linkedin:"https://www.linkedin.com/in/nagadeep-sharma/"
     }
