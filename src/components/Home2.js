@@ -12,16 +12,17 @@ function Home2({profile}) {
             <div className="home2-left-skills">
                 <div className="ul">
                     <li>Django</li>
-                    <li>React & Native</li>
-                    <li>Ethereum</li>
-                    <li>Solidity</li>
-                    <li>Postgres</li>
+                    <li>ReactJS</li>
+                    <li>Ethereum Solidity</li>
+                    <li>Git</li>
+                    <li>Postgresql</li>
                 </div>
                 <div className="ul">
                     <li>Python</li>
                     <li>Javascript</li>
                     <li>Java</li>
                     <li>Html & Css</li>
+                    <li>Bootstrap</li>
                 </div>
             </div>
             </div>

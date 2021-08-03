@@ -223,6 +223,7 @@ export const GlobalStyle=createGlobalStyle`
         justify-content:space-around;
         width:100%;
         height:fit-content;
+        padding:5px 0px;
         background-color:var(--boxshcolor--);
     }
     .ul{
