@@ -8,7 +8,7 @@ function Home2({profile}) {
             <p>While I keep busy Making Projects, I still search of a great team & projects that interest me.</p>
             <hr />
             <h2>Top Expertise</h2>
-            <p>Fullstack developer with primary focus on Django + React: <a target="_window" href={profile.resume}>Download Resume</a></p>
+            <p>Fullstack developer with primary focus on Django + React and Salesforce LWC: <a target="_window" href={profile.resume}>Download Resume</a></p>
             <div className="home2-left-skills">
                 <div className="ul">
                     <li>Django</li>
