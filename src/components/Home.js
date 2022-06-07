@@ -5,7 +5,7 @@ import Home4 from './Home4';
 import Home5 from './Home5';
 import Home6 from './Home6';
 import React from 'react'
-import dest from '../assets/Destinations.json'
+
 
 function Home() {
     const profile={
@@ -14,19 +14,11 @@ function Home() {
         instagram:"https://www.instagram.com/nagadeep.sharma/",
         linkedin:"https://www.linkedin.com/in/nagadeep-sharma/"
     }
-    const places=dest.map((ii)=>{if(ii.city==='Bangalore'){
-        return ii.places
-    }})
-    console.log(places);
 
     return (
         <>
             <Home1 />
             <Home2 profile={profile}/>
-
-            {
-                places[0].map((i)=>(<h1>{i.name}</h1>))
-            }
 
 
             <Home3 />
