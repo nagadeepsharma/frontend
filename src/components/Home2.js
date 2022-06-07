@@ -15,7 +15,7 @@ function Home2({profile}) {
                     <li>ReactJS</li>
                     <li>Ethereum Solidity</li>
                     <li>Git</li>
-                    <li>Postgresql</li>
+                    <li>Salesforce</li>
                 </div>
                 <div className="ul">
                     <li>Python</li>
